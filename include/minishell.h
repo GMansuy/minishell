@@ -6,7 +6,7 @@
 /*   By: gmansuy <gmansuy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 14:45:22 by gmansuy           #+#    #+#             */
-/*   Updated: 2022/11/04 17:36:15 by gmansuy          ###   ########.fr       */
+/*   Updated: 2022/11/25 18:46:15 by gmansuy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ typedef struct s_help
 	int		i;
 	int		j;
 	int		exp;
-	t_lexer *lex;
+	t_lexer	*lex;
 	char	*str;
 }	t_help;
 
@@ -128,7 +128,7 @@ void	fork_sigint(int sig);
 void	sig_heredoc(void);
 //init
 void	init_all(t_data *data);
-t_data	*get_data();
+t_data	*get_data(void);
 
 //1_LEXER
 //lexer

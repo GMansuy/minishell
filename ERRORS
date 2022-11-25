@@ -1,6 +1,0 @@
-->On interprete pas '\'
-->  existe pas (non demandé)
-->env env env doit marcher
-env ls OU env pwd doivent executer la commande de fin
--> export '' => invalid read
--> expand ls -la marche pas si s -la est entre double quotes

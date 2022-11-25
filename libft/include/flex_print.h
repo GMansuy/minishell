@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   flex_print.h                                     :+:      :+:    :+:   */
+/*   flex_print.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akouoi <akouoi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gmansuy <gmansuy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/19 16:52:24 by akouoi            #+#    #+#             */
-/*   Updated: 2022/10/16 15:06:31 by akouoi           ###   ########.fr       */
+/*   Created: 2022/11/25 18:56:56 by gmansuy           #+#    #+#             */
+/*   Updated: 2022/11/25 18:57:00 by gmansuy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef flex_print_H
-# define flex_print_H
+#ifndef FLEX_PRINT_H
+# define FLEX_PRINT_H
 
 # include <stdarg.h>
 # include <unistd.h>

@@ -6,7 +6,7 @@
 /*   By: gmansuy <gmansuy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 15:02:11 by gmansuy           #+#    #+#             */
-/*   Updated: 2022/11/04 18:51:38 by gmansuy          ###   ########.fr       */
+/*   Updated: 2022/11/25 18:44:24 by gmansuy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,5 @@ int	lexer(t_data *data, char *command_buf)
 	lex_meta(*(data->lex_list), data->meta, data->del_qu);
 	space_clear(*(data->lex_list));
 	get_token_type(&data->heredoc_nb, data->lex_list);
-	// lex_print(*data->lex_list);
 	return (0);
 }

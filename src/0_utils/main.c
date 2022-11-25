@@ -6,7 +6,7 @@
 /*   By: gmansuy <gmansuy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:14:52 by gmansuy           #+#    #+#             */
-/*   Updated: 2022/11/04 16:03:43 by gmansuy          ###   ########.fr       */
+/*   Updated: 2022/11/25 17:41:07 by gmansuy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,10 @@ char	*read_input(t_data *data)
 		if (input_invalid(command_buf) == 0)
 			add_history(command_buf);
 		else
+		{
+			free(command_buf);
 			continue ;
+		}
 		return (command_buf);
 	}
 }
@@ -88,11 +91,3 @@ int	main(int argc, char **argv, char **envp)
 	main_loop(data);
 	return (0);
 }
-		//
-		// t_lexer *lex = *(data.lex_list);
-		// while (lex)
-		// {
-		// 	flex_print(2, GRN_I, "%s\n", lex->token);
-		// 	lex = lex->next;
-		// }
-		//

@@ -98,6 +98,7 @@ clean:
 
 fclean:		
 			@make clean
+			@make fclean -C libft
 			@$(RM) $(NAME)
 			@$(RM) $(NAME_BONUS)
 			@$(RM) $(LIB)

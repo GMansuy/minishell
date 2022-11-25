@@ -6,16 +6,16 @@
 /*   By: gmansuy <gmansuy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 13:59:18 by gmansuy           #+#    #+#             */
-/*   Updated: 2022/10/19 18:47:42 by gmansuy          ###   ########.fr       */
+/*   Updated: 2022/11/25 18:50:58 by gmansuy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-t_mem_stack *new_branch(t_mem_stack **mem, void *ptr)
+t_mem_stack	*new_branch(t_mem_stack **mem, void *ptr)
 {
 	t_mem_stack	*new;
-	
+
 	new = create_mem_stack(ptr);
 	(*mem)->child = new;
 	new->parent = *mem;
@@ -26,7 +26,7 @@ void	destroy_branch(t_mem_stack **mem)
 {
 	t_mem_stack	*tmp;
 	t_mem_stack	*parent;
-	
+
 	parent = (*mem)->parent;
 	while ((*mem) != NULL)
 	{

@@ -6,7 +6,7 @@
 /*   By: gmansuy <gmansuy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 16:04:53 by gmansuy           #+#    #+#             */
-/*   Updated: 2022/11/08 13:14:49 by gmansuy          ###   ########.fr       */
+/*   Updated: 2022/11/25 18:43:55 by gmansuy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,6 @@ int	pre_parser(t_data *data, char *command_buf)
 	tab_zero(data->meta, len - counter);
 	tab_zero(data->del_qu, len + 1 - counter);
 	get_meta(data, command_buf);
-	// preparsing_tester(data->command_buf, data->meta, data->del_qu);
 	if (!*data->command_buf)
 		return (ft_putstr_fd("minishell: '': Command not found\n", 2), 1);
 	return (forbidden_chars(data->command_buf, data->meta));
